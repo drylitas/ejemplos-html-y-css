@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    /* border: 5px solid red; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    background-color: #f7f8fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 94rem;
+}
+.card{
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 20px rgb(0,0,0,0.1);
+    overflow: hidden;
+    width: 30rem;
+}
+.card-header img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 2rem;
+    min-height: 250px;
+}
+.tag{
+    background-color: #777777;
+    border-radius: 50px;
+    font-size: 12px;
+    margin: 0;
+    color: #ffffff;
+    padding: .2rem 1rem;
+    text-transform: uppercase;
+}
+.tag-teal{
+    background-color: #92d4e4;
+}
+.tag-purple{
+    background-color: #3d1d94;
+}
+.tag-pink{
+    background-color: #c62bcb;
+}
+
+.card-body h4{
+    margin: 10px 0;
+}
+
+.card-body p{
+    font-size: 1.3rem;
+    margin: 0 0 40px;
+}
+
+.user{
+    display: flex;
+    margin-top: auto;
+}
+
+.user img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.user-info small{
+    color: #888785;
+}
+
+
+@media(max-width: 940px){
+    .container{
+        grid-template-columns: 1fr;
+        justify-items: center;
+}
